@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".AdminAsksQuestionNo">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:text="Quiz Paper"
+    android:textAlignment="center"
+    android:background="@color/white"
+    android:textColor="@color/black"
+    android:elevation="5dp"
+    android:textSize="22sp" />
+<LinearLayout
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_marginTop="0dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/topicid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/roundedcorners"
+            android:entries="@array/spinnerItems"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/quiznameid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/roundedcorners"
+            android:hint="Quiz Name"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/noofquestionsid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/roundedcorners"
+            android:hint="Number of Questions"
+            android:inputType="number"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:background="#03A9F4"
+            android:text="Initiate Quiz"
+            android:onClick="gotoPaperSet"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
+</LinearLayout>

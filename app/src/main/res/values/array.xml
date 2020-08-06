@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItems">
+        <item>Select a topic</item>
+        <item>General Culture</item>
+        <item>Science &amp; Tech</item>
+        <item>Coding</item>
+        <item>History</item>
+    </string-array>
+</resources>

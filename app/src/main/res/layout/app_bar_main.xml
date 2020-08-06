@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        >
+
+        <LinearLayout
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:padding="65dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="General Culture"
+                        android:onClick="gotoQuizlist"
+                        android:tag="Culture"
+                        android:background="@drawable/generalculture"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:padding="65dp"
+                        android:text="Science &amp; Tech"
+                        android:onClick="gotoQuizlist"
+                        android:tag="Science"
+                        android:background="@drawable/sciencetech"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:padding="65dp"
+                        android:text="Coding"
+                        android:onClick="gotoQuizlist"
+                        android:tag="Coding"
+                        android:background="@drawable/coding"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:padding="65dp"
+                        android:text="History"
+                        android:onClick="gotoQuizlist"
+                        android:tag="History"
+                        android:background="@drawable/history"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

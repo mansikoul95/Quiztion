@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:background="@drawable/backgroundimg"
+tools:context=".AdminWelcomeActivity">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:text="Welcome Admin"
+    android:textAlignment="center"
+    android:background="@color/white"
+    android:textColor="@color/black"
+    android:elevation="5dp"
+    android:textSize="22sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    android:layout_marginTop="0dp">
+
+    <!--        android:layout_marginTop="10dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Setup a Quiz"
+        android:paddingTop="19dp"
+        android:elevation="5dp"
+        android:textSize="16dp"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:tag="0"
+        android:onClick="followadmin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check the Leaderboard"
+        android:paddingTop="19dp"
+        android:elevation="5dp"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="1dp"
+        android:textColor="#000"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:tag="1"
+        android:onClick="followadmin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:paddingTop="19dp"
+        android:elevation="5dp"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="1dp"
+        android:textColor="#000"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:tag="2"
+        android:onClick="followadmin"/>
+
+
+
+
+</LinearLayout>
+</LinearLayout>
